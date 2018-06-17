@@ -1,0 +1,380 @@
+/*desktop media queries*/
+
+@media only screen and (max-height: 900px)
+	.slider
+		height: auto
+
+@media only screen and (max-width: 1339px) and (min-width: 1260px)
+	.form__input-field
+		width: 280px
+
+	.form__btn
+		width: 280px
+
+/*tablet media queries*/
+
+@media only screen and (max-width: 1259px) and (min-width: 960px)
+	.header__left-block
+		padding: 0 40px
+
+	.header__logo
+		width: 150px
+		margin-right: 40px
+
+	.header__menu-item
+		margin-right: 20px
+		font-size: 21px
+		line-height: 21px
+
+	.header__phones
+		font-size: 21px
+		line-height: 21px
+
+	.header__phone-item:first-child
+		margin-bottom: 7px
+
+	.header__address,
+	.header__email
+		font-size: 21px
+		line-height: 21px
+
+	.header__address
+		margin-bottom: 7px
+
+	.slider
+		height: auto
+
+	.slider__logo
+		width: 700px
+		height: 140px
+
+	.slider__header
+		font-size: 90px
+		line-height: 90px
+		strong
+			font-size: 122px
+			line-height: 90px
+
+	.envelope
+		margin: 0 80px 35px 0
+
+	.slider__curve
+		top: 55px
+		width: 700px
+		height: 180px
+
+	.slider__curve-circle_second
+		top: 50px
+		left: 130px
+
+	.slider__curve-circle_third
+		bottom: 0
+		left: 280px
+
+	.slider__curve-circle_fourth
+		top: 0
+		right: 220px
+
+	.slider__curve-circle_fifth
+		right: 0
+		bottom: 30px
+
+	.slider__curve-line_first
+		width: 170px
+		transform: rotate(-37deg)
+
+	.slider__curve-line_second
+		top: 60px
+		left: 135px
+		width: 200px
+		transform: rotate(33deg)
+
+	.slider__curve-line_third
+		left: 295px
+		width: 230px
+		transform: rotate(-41deg)
+
+	.slider__curve-line_fourth
+		top: 10px
+		width: 260px
+		transform: rotate(28deg)
+
+	.form__header
+		font-size: 30px
+		line-height: 30px
+
+	.form__input-field
+		width: 210px
+
+	.form__btn
+		width: 210px
+
+	.form__after-form
+		font-size: 20px
+		line-height: 20px
+
+
+@media only screen and (max-width: 959px) and (min-width: 768px)
+	.header__left-block
+		padding: 0 30px
+
+	.header__logo
+		width: 110px
+		margin-right: 30px
+
+	.header__menu-item
+		margin-right: 20px
+		font-size: 18px
+		line-height: 18px
+
+	.header__phones
+		font-size: 18px
+		line-height: 18px
+
+	.header__phone-item:first-child
+		margin-bottom: 5px
+
+	.header__address,
+	.header__email
+		font-size: 18px
+		line-height: 18px
+
+	.header__address
+		margin-bottom: 5px
+
+	.slider
+		height: auto
+
+	.slider__logo
+		width: 700px
+		height: 140px
+
+	.slider__header
+		font-size: 80px
+		line-height: 80px
+		strong
+			font-size: 102px
+			line-height: 80px
+
+	.envelope
+		margin: 0 45px 35px 0
+
+	.slider__curve
+		top: 55px
+		width: 700px
+		height: 180px
+
+	.slider__curve-circle_second
+		top: 50px
+		left: 130px
+
+	.slider__curve-circle_third
+		bottom: 0
+		left: 280px
+
+	.slider__curve-circle_fourth
+		top: 0
+		right: 220px
+
+	.slider__curve-circle_fifth
+		right: 0
+		bottom: 30px
+
+	.slider__curve-line_first
+		width: 170px
+		transform: rotate(-37deg)
+
+	.slider__curve-line_second
+		top: 60px
+		left: 135px
+		width: 200px
+		transform: rotate(33deg)
+
+	.slider__curve-line_third
+		left: 295px
+		width: 230px
+		transform: rotate(-41deg)
+
+	.slider__curve-line_fourth
+		top: 10px
+		width: 260px
+		transform: rotate(28deg)
+
+	.form__header
+		font-size: 26px
+		line-height: 26px
+
+	.form__input-field
+		width: 180px
+		margin-right: 15px
+
+	.form__btn
+		width: 130px
+
+	.form__after-form
+		font-size: 18px
+		line-height: 18px
+
+
+/*mobile media queries*/
+
+@media only screen and (max-width: 767px) and (min-width: 320px)
+	.hamburger
+		position: fixed
+		display: block
+		top: 25px
+		right: 25px
+		width: 30px
+		height: 30px
+		cursor: pointer
+		overflow: hidden
+		z-index: 4
+
+	.hamburger_state_active
+		.hamburger__line
+			background-color: $hamburger-line-active-color
+			transition: all 0.3s
+			&:nth-child(1)
+				top: 50%
+				transform: translate(-50%, -50%) rotate(45deg)
+			&:nth-child(2)
+				left: -30px
+			&:nth-child(3)
+				top: 50%
+				bottom: auto
+				transform: translate(-50%, -50%) rotate(-45deg)
+
+	.hamburger__line
+		position: absolute
+		display: block
+		left: 50%
+		width: 26px
+		height: 2px
+		background-color: $hamburger-line-color
+		transform-origin: 50% 50%
+		transition: all 0.3s
+		&:nth-child(1)
+			top: 5px
+			transform: translate(-50%, 0)
+		&:nth-child(2)
+			top: 50%
+			transform: translate(-50%, -50%)
+		&:nth-child(3)
+			bottom: 5px
+			transform: translate(-50%, 0)
+
+	.header
+		flex-direction: column
+		right: -100%
+		left: auto
+		height: auto
+		overflow: hidden
+		z-index: 3
+		transition: all 0.5s
+
+	.header_state_active
+		right: 0
+		left: auto
+		transition: all 0.5s
+
+	.header__left-block
+		flex-direction: column
+		width: 100%
+		height: auto
+		padding: 25px 45px
+
+	.header__logo
+		width: 140px
+		height: 50px
+		margin: 0 auto
+		margin-bottom: 25px
+
+	.header__menu
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.header__menu-item
+		margin-right: 0
+		margin-bottom: 25px
+		font-size: 20px
+		line-height: 20px
+		&:after
+			display: none
+		&:last-child
+			margin-bottom: 0
+
+	.header__middle-block
+		width: 100%
+		height: auto
+		padding: 25px 0
+
+	.header__phones
+		font-size: 18px
+		line-height: 18px
+
+	.header__phone-item:first-child
+		margin-bottom: 7px
+
+	.header__right-block
+		width: 100%
+		height: auto
+		padding: 25px
+		text-align: center
+
+	.header__contacts
+		margin: 0 auto
+
+	.header__address,
+	.header__email
+		font-size: 18px
+		line-height: 18px
+
+	.header__address
+		margin-bottom: 7px
+
+	.slider
+		height: auto
+		padding-top: 90px
+
+	.slider__logo
+		width: 95%
+		height: auto
+
+	.slider__header
+		font-size: 50px
+		line-height: 50px
+		strong
+			font-size: 55px
+			line-height: 50px
+
+	.envelope
+		margin: 25px auto
+
+	.slider__curve
+		display: none
+
+	.form
+		padding: 45px 25px
+
+	.form__header
+		font-size: 24px
+		line-height: 26px
+
+	.form__inputs
+		flex-direction: column
+		width: 100%
+
+	.form__input-field
+		width: 100%
+		max-width: 310px
+		margin-right: 0
+		margin-bottom: 25px
+
+	.form__btn
+		width: 100%
+		max-width: 310px
+
+	.form__after-form
+		font-size: 16px
+		line-height: 18px

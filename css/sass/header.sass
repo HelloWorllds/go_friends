@@ -1,0 +1,113 @@
+.header
+	position: fixed
+	display: flex
+	align-items: center
+	top: 0
+	left: 0
+	width: 100%
+	height: 100px
+	z-index: 1
+
+.header__left-block
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	width: 50%
+	height: 100%
+	padding-right: 45px
+	background-color: $header-left-block-bg
+	color: $header-left-block-txt-color
+
+.header__logo
+	width: 175px
+	height: 60px
+	margin-right: 95px
+	img
+		width: 100%
+		height: 100%
+		object-fit: contain
+
+.header__menu
+	display: flex
+	justify-content: space-between
+
+.header__menu-item
+	position: relative
+	display: inline-block
+	width: auto
+	margin-right: 25px
+	font-family: 'BebasNeue Regular'
+	font-size: 24px
+	line-height: 24px
+	text-transform: uppercase
+	&:after
+		content: ''
+		position: absolute
+		display: block
+		bottom: -10px
+		left: 50%
+		width: 0
+		height: 2px
+		background-color: $header-menu-underline
+		transform-origin: 50% 50%
+		transform: translate(-50%, 0)
+		transition: all 0.3s
+	&:hover:after
+		width: 100%
+		transition: all 0.3s
+	&:last-child
+		margin-right: 0
+
+.header__middle-block
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 17.5%
+	height: 100%
+	background-color: $header-middle-block-bg
+	color: $header-txt-color
+
+.header__phones
+	display: flex
+	flex-direction: column
+	font-family: 'BebasNeue Regular'
+	font-size: 24px
+	line-height: 24px
+
+.header__phone-item:first-child
+	margin-bottom: 10px
+
+.header__right-block
+	display: flex
+	align-items: center
+	width: 32.5%
+	height: 100%
+	padding-left: 25px
+	background-color: $header-left-block-txt-color
+	color: $header-txt-color
+
+.header__contacts
+	display: flex
+	flex-direction: column
+	span
+		position: relative
+		display: inline-block
+		width: 25px
+		margin-right: 10px
+		color: $header-icon-color
+		&:before
+			position: absolute
+			display: block
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -75%)
+
+.header__address,
+.header__email
+	font-family: 'BebasNeue Regular'
+	font-size: 24px
+	line-height: 24px
+	text-transform: uppercase
+
+.header__address
+	margin-bottom: 10px
